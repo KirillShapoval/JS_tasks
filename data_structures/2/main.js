@@ -11,7 +11,7 @@ function arrPositiveSum(array) {
 
 var arr = [1, -4, 7, 12, -5, 9, 5, -7];
 
-arrPositiveSum (arr);
+arrPositiveSum(arr);
 
 var checkSum = arrPositiveSum(arr);
 console.log(checkSum);
