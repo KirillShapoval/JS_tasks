@@ -1,4 +1,4 @@
-20:28 29.03.2018function removeEveryOdd(arr) {
+function removeEveryOdd(arr) {
   var oddItems = arr.filter(function(element, i) {
     return (i % 2 === 0);
   });
