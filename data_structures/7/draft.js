@@ -1,4 +1,4 @@
-var arr =  ["Telescopes", "Yes", "Glasses", "Eyes", "Monocles"];
+ï»¿var arr =  ["Telescopes", "Yes", "Glasses", "Eyes", "Monocles"];
 
 // function sortByLength(array) {
 //   var nameLengths = array.map(function(name) {
@@ -13,7 +13,7 @@ var arr =  ["Telescopes", "Yes", "Glasses", "Eyes", "Monocles"];
 // var checkLength = sortByLength(arr)
 // console.log(checkLength);
 
-//Ïîäñìîòðåë ôóíêöèþ íà learn.javascript.ru ))
+//ÐŸÐ¾Ð´ÑÐ¼Ð¾Ñ‚Ñ€ÐµÐ» Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑŽ Ð½Ð° learn.javascript.ru ))
 function compareNumeric(a, b) {
   if (a.lentgh > b.lentgh) return 1;
    if (a.lentgh < b.lentgh) return -1;

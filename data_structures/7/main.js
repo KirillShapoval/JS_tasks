@@ -4,7 +4,7 @@ function sortByLength(array) {
     return a.length - b.length;
   }
 
-  return array.sort(compareNumeric)
+  return array.slice().sort(compareNumeric) // slice(), чтобы оставить исходный массив
 }
 
 var arr =  ["Telescopes", "Yes", "Glasses", "No", "Eyes", "Monocles"];
@@ -13,3 +13,5 @@ sortByLength(arr);
 
 var checkSortByLength = sortByLength(arr);
 console.log(checkSortByLength);
+
+console.log(arr);
