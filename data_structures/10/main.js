@@ -2,7 +2,7 @@ function findNeedle(haystack) {
 
   for (var i = 0; i < haystack.length; i++) {
     if (haystack[i] === 'needle') {
-      return i;
+      return "found the needle at position " + i;
     }
   }
 }
@@ -16,10 +16,10 @@ findNeedle(haystack_2);
 findNeedle(haystack_3);
 
 var testFindNeedle_1 = findNeedle(haystack_1);
-console.log("found the needle at position " + testFindNeedle_1);
+console.log(testFindNeedle_1);
 
 var testFindNeedle_2 = findNeedle(haystack_2);
-console.log("found the needle at position " + testFindNeedle_2);
+console.log(testFindNeedle_2);
 
 var testFindNeedle_3 = findNeedle(haystack_3);
-console.log("found the needle at position " + testFindNeedle_3);
+console.log(testFindNeedle_3);
