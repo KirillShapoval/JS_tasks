@@ -1,4 +1,4 @@
-var hoopCount = prompt ("Алекс, введи количество оборотов обруча вокруг себя");
+п»їvar hoopCount = prompt ("РђР»РµРєСЃ, РІРІРµРґРё РєРѕР»РёС‡РµСЃС‚РІРѕ РѕР±РѕСЂРѕС‚РѕРІ РѕР±СЂСѓС‡Р° РІРѕРєСЂСѓРі СЃРµР±СЏ");
 
   if (hoopCount<10) {
   console.log("Keep at it until you get it");

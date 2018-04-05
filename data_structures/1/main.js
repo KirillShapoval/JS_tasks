@@ -1,4 +1,4 @@
-function removeEveryOdd(arr) {
+﻿function removeEveryOdd(arr) {
   var oddItems = arr.filter(function(element, i) {
     return (i % 2 === 0);
   });

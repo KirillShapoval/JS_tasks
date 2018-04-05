@@ -1,4 +1,4 @@
-function playingBanjo(name) {
+﻿function playingBanjo(name) {
 
   var firstSymbol = name[0];
 

@@ -1,10 +1,11 @@
-function digitize(n) {
+﻿function digitize(n) {
   var str = n + "";
   str = str.split("").reverse();
 
   for (i = 0; i < str.length; i++) {
     str[i] = +str[i];
   }
+
   return str;
 }
 

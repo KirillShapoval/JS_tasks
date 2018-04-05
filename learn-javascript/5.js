@@ -1,4 +1,4 @@
-function checkBMI(weight, height)  {
+﻿function checkBMI(weight, height)  {
   var bmi = weight/(height*height);
 
   if (bmi <= 18.5) {

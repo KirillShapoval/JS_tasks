@@ -1,4 +1,4 @@
-function stringToNumber(str) {
+﻿function stringToNumber(str) {
   console.log(typeof(str));
   console.log(Number(str));
   console.log(typeof(Number(str)));

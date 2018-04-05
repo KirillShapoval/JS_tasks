@@ -1,4 +1,4 @@
-function calcRentalCarCost(days) {
+п»їfunction calcRentalCarCost(days) {
   var amount = 0;
   if (days < 3) {
     amount = days * 40;
@@ -7,7 +7,7 @@ function calcRentalCarCost(days) {
   } else if (days >= 7) {
     amount = days * 40 - 50;
   }
-  return "Цена проката: " + amount + "$";
+  return "Р¦РµРЅР° РїСЂРѕРєР°С‚Р°: " + amount + "$";
 }
 
 calcRentalCarCost(2);

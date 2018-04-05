@@ -1,4 +1,4 @@
-function someFunc(callback) {
+﻿function someFunc(callback) {
   var name = "Kerya";
   callback(name);
 };

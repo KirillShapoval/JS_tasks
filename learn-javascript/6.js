@@ -1,4 +1,4 @@
-function getEvenOrOdd(even_or_odd)  {
+﻿function getEvenOrOdd(even_or_odd)  {
   if (even_or_odd % 2 == 0)
   console.log("Even");
   else if (even_or_odd % 2 == 1)

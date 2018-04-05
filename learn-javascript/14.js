@@ -1,4 +1,4 @@
-function getArithmetic(a, b, arithmetic_operator) {
+﻿function getArithmetic(a, b, arithmetic_operator) {
 
   switch (arithmetic_operator) {
   case 'add':

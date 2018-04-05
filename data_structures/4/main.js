@@ -1,4 +1,4 @@
-function gimme(inputArray) {
+﻿function gimme(inputArray) {
   for (i = 0; i < inputArray.length; i++) {
     if ( (inputArray[1] < inputArray[0] && inputArray[0] < inputArray[2]) ||
          (inputArray[2] < inputArray[0] && inputArray[0] < inputArray[1]) )

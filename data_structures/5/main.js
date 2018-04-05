@@ -1,4 +1,4 @@
-function sumDigits(number) {
+﻿function sumDigits(number) {
   var num = number + "";
   num = num.split("");
 

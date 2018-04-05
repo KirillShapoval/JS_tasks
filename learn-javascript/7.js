@@ -1,4 +1,4 @@
-var str = prompt("Введите строку");
+п»їvar str = prompt("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ");
 var lastSymbol = str[str.length - 1];
 
 if (lastSymbol === "!") {

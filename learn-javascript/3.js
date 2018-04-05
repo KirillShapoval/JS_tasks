@@ -1,4 +1,4 @@
-function reverse(str) {
+﻿function reverse(str) {
   var mass = str.split(" ");
   var newStr = mass.reverse();
   return newStr.join(" ");

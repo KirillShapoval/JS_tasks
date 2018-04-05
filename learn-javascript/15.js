@@ -1,4 +1,4 @@
-var str = prompt("Введите слово из 5 символов");
+п»їvar str = prompt("Р’РІРµРґРёС‚Рµ СЃР»РѕРІРѕ РёР· 5 СЃРёРјРІРѕР»РѕРІ");
 
 var Symbol_1 = str[0];
 var new_Symbol_1 = Symbol_1+Symbol_1;

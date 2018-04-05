@@ -1,11 +1,11 @@
-1 вариант:
+п»ї1 РІР°СЂРёР°РЅС‚:
 
 function someFunction() {
   var a = someFunction;
-  return a.name; // возврат имени функции
+  return a.name; // РІРѕР·РІСЂР°С‚ РёРјРµРЅРё С„СѓРЅРєС†РёРё
 }
 
-//проверка
+//РїСЂРѕРІРµСЂРєР°
 var checkName = someFunction()
 console.log(checkName);
 
@@ -13,16 +13,16 @@ console.log(checkName);
 
 
 
-2 вариант
+2 РІР°СЂРёР°РЅС‚
 
 function someFunction(fn) {
   if (typeof fn !== "function") return "Not a function";
 
-  var fnName = fn.name; // возврат имени функции
+  var fnName = fn.name; // РІРѕР·РІСЂР°С‚ РёРјРµРЅРё С„СѓРЅРєС†РёРё
   return fnName || "Anonymous function";
 }
 
-//проверка
+//РїСЂРѕРІРµСЂРєР°
 var checkFunction1 = someFunction(function () {} );
 console.log(checkFunction1);
 
