@@ -9,7 +9,7 @@ function sortString(str) {
   }
 
   arr.sort(compareNumeric);
-  
+
   return arr.join(" ");
 }
 
