@@ -22,7 +22,6 @@
     }
 
     else newStr += key + obj[key];
-
   }
 
   return newStr;
