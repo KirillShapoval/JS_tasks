@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Bulls and Cows</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  <body>
+
+    <h1>Bulls and Cows game</h1>
+    <p class='introduction'><strong>Bulls and Cows</strong> (also known as <strong>Cows and Bulls</strong> or <strong>Pigs and Bulls</strong> or
+      <strong>Bulls and Cleots</strong>) is an old code-breaking mind or paper and pencil game for two or more players,
+      predating the commercially marketed board game <em>Mastermind</em>. It is a game that may date back a century or more
+      which uses numbers or words.</p>
+
+    <button id='wordvers' class='wordvers'>The word version</button>
+    <div class='info'>
+    <p>This version is usually played orally, but is easier to play if each player (or each team) keeps written notes. It is
+      exactly like the numerical version except instead of 4-digit numbers, 4-letter words are used. They must be real words,
+      according to whatever language or languages you are playing the game in. Alternate versions of the game can be played
+      with 3-letter or 5-letter words, but the 4-letter version is the most popular. Several versions of this game are
+      available for Computer & Mobile devices. The first official massively multiplayer (MMO) version of this game was first
+      made available for Android devices under the name WORD - Multiplayer Word Game. The Game play for letter version of
+      this game is as follows.</p>
+    <p>A person (Host) thinks of any isogram word, and gives out the number of letters in the word.</p>
+    <p>Other players (Guessers) try to figure that word by guessing isogram words containing the same number of letters.</p>
+    <p>Host responds with the number of Cows & Bulls for each guessed word. As with the digit version, "Cow" means a letter
+      in the wrong position, while "Bull" means a letter in the right position.</p>
+    <p>For example, if the secret word is HEAT, a guess of COIN would result in "0 Bulls, 0 Cows" (all of the guessed
+      letters are wrong); a guess of EATS would result in "0 Bulls, 3 Cows" (since E, A, T are all present, but not in the
+      guessed positions), and a guess of TEAL would result in "2 Bulls, 1 Cow" (since E and A are in the right positions,
+      while T is in the wrong position). The game would continue until someone scores "4 Bulls" for guessing HEAT exactly.</p>
+    </div>
+
+    <h2>Find more information <a href='https://en.wikipedia.org/wiki/Bulls_and_Cows' target='_blank'>here</a></h2>
+       
+   <div class='playing'>
+    <h2 id='letsPlay'>Let's play!</h2>
+    <p><strong>Try to guess this word:</p></strong>
+
+    <form id='form' action='' onsubmit="return false">
+    <input id='form-input' class='form-input' type='text' placeholder='Try it!' name='tryit'><br><br>
+    <div><input id='btn-submit' type='submit' value='Submit'></div><br>
+    </form>
+
+    <p id='validTries'><strong>Your valid tries:</p></strong>
+    <div id='playagain' class='playagain'>
+     <h2><strong>Do you want to play again?</h2></strong>
+     <button id='reload'>Yes</button>
+     <button id='end-of-game'>No</button>
+    </div>
+
+  </div>
+   
+  </body>
+
+  <script src='main.js'></script>
+
+</html>

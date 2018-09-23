@@ -1,0 +1,42 @@
+.introduction, .info {
+    text-align: justify;
+}
+
+h1, .wordvers, .playing {
+    text-align: center;
+}
+
+.wordvers {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 100px;
+}
+
+.info {
+    display: none;  
+    overflow: hidden;
+}
+
+.red {
+    color: #F00;
+}
+
+.form-input {
+    height: 90px;
+    width: 250px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.playagain {
+    display: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: #F00;
+}
