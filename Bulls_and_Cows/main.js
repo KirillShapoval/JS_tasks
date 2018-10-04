@@ -6,6 +6,21 @@
 
     const validResults = [];
 
+    const letsPlay = document.createElement('div');
+    const length = document.createElement('h3');
+    const tryToGuess = document.createElement('p');
+    const info = document.createElement('div');
+    const attempts = document.createElement('p');
+    const guessing = document.createElement('p');
+    const validTries = document.createElement('p');
+    const historyTries = document.createElement('div');
+    const win = document.createElement('h2');
+    const lose = document.createElement('h2');
+    const playingAgain = document.createElement('h2');
+    const newGame = document.createElement('button');
+    const endOfGame = document.createElement('button');
+    const thanks = document.createElement('h2');
+
     const isogramWord = getRandomArrayValue(ARRAY_OF_ISOGRAMS);
     let tries = countTheNumbersOfTries(isogramWord);
 
@@ -92,21 +107,7 @@
         return el;
     }
 
-    // function creationOfElements(isogram, tries, bulls, cows) {
-        const letsPlay = document.createElement('div');
-        const length = document.createElement('h3');
-        const tryToGuess = document.createElement('p');
-        const info = document.createElement('div');
-        const attempts = document.createElement('p');
-        const guessing = document.createElement('p');
-        const validTries = document.createElement('p');
-        const historyTries = document.createElement('div');
-        const win = document.createElement('h2');
-        const lose = document.createElement('h2');
-        const playingAgain = document.createElement('h2');
-        const newGame = document.createElement('button');
-        const endOfGame = document.createElement('button');
-        const thanks = document.createElement('h2');
+    function fillingOfElements() {
 
         letsPlay.style.textAlign = 'center';
         playingAgain.className = 'play-again';
@@ -125,6 +126,7 @@
         newGame.innerHTML = 'Yes';
         endOfGame.innerHTML = 'No';
 
+    
         appendMultipleElements(letsPlay, [length, tryToGuess, form, info, attempts, guessing, validTries, historyTries,
         win, lose, playingAgain, newGame, endOfGame, thanks]);
 
@@ -132,8 +134,9 @@
 
         newGame.addEventListener('click', playingNewGame);
         endOfGame.addEventListener('click', endOfTheGame); 
+    }
 
-    // creationOfElements(isogramWord, tries, guessBulls, guessCows);
+    fillingOfElements();
  
     let triesElem = attempts.querySelectorAll('strong')[0];
     const bulls = guessing.querySelector('.bulls');
