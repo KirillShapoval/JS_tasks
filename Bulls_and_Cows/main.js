@@ -21,17 +21,23 @@
     const endOfGame = document.createElement('button');
     const thanks = document.createElement('h2');
 
+    let form = document.createElement('form');
+    let inputText = document.createElement('input');
+    let inputSubmit = document.createElement('input');
+
     const isogramWord = getRandomArrayValue(ARRAY_OF_ISOGRAMS);
     let tries = countTheNumbersOfTries(isogramWord);
 
-    console.log('Isogram (secret word) is ' + isogramWord);
+    console.log(`Isogram (secret word) is ${isogramWord}`);
 
-    const form = document.createElement('form');
+    document.getElementById('wordvers').addEventListener('click', function() {
+
+        const panel = this.nextElementSibling;
+        
+        panel.style.display === 'block' ? panel.style.display = 'none' : panel.style.display = 'block';
+    });
 
     function createForm() {
-        const inputText = document.createElement('input');
-        const inputSubmit = document.createElement('input');
-
         form.onsubmit = addEventListener('submit', function(e) {
             e.preventDefault()
             handleSubmit();
@@ -55,15 +61,6 @@
     }
     createForm();
 
-    function openingWordVersion() {
-        document.getElementById('wordvers').addEventListener('click', function() {
-            const panel = this.nextElementSibling;
-            
-            panel.style.display === 'block' ? panel.style.display = 'none' : panel.style.display = 'block';
-        });
-    }
-    openingWordVersion();
-    
     function getRandomArrayValue(arr) {
         const randomIsogramWord = Math.floor(Math.random() * arr.length);
         return arr[randomIsogramWord];
@@ -88,11 +85,11 @@
         return { guessBulls, guessCows };
     }
 
-    const { guessBulls, guessCows } = calculateBullsAndCows(isogramWord, document.querySelector('.form-input').value); 
+    const { guessBulls, guessCows } = calculateBullsAndCows(isogramWord, inputText.value); 
 
-    function insertElements(newNode, referenceNode) {
-        referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
-    }
+    // function insertElements(newNode, referenceNode) {
+    //     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+    // }
 
 //    (container) => {
 //        const guessing = document.createElement('p');
@@ -126,16 +123,15 @@
         newGame.innerHTML = 'Yes';
         endOfGame.innerHTML = 'No';
 
-    
         appendMultipleElements(letsPlay, [length, tryToGuess, form, info, attempts, guessing, validTries, historyTries,
         win, lose, playingAgain, newGame, endOfGame, thanks]);
 
-        insertElements(letsPlay, document.getElementById('playing'));
+        // insertElements(letsPlay, document.getElementById('playing'));
+        document.getElementById('playing').appendChild(letsPlay);
 
         newGame.addEventListener('click', playingNewGame);
         endOfGame.addEventListener('click', endOfTheGame); 
     }
-
     fillingOfElements();
  
     let triesElem = attempts.querySelectorAll('strong')[0];
@@ -159,7 +155,7 @@
         let found = value.match(regex);
        
         if (value.length !== isogramWord.length) {
-            errors.push('Enter the word consisting of ' + isogramWord.length + ' letters' + '!');
+            errors.push(`Enter the word consisting of ${isogramWord.length} letters!`);
         }
         if (!charCheck(value)) {
             errors.push('Enter the isogram word!');
@@ -170,11 +166,9 @@
         return errors;
     }
     
-    function decreaseOfAttempts() {
-        return (tries > 0) ? --tries : 0
-    }
+    const decreaseOfAttempts = () => tries > 0 ? --tries : 0;
 
-    function renderArrayAndElement(elem, arr) {
+    const renderArrayAndElement = (elem, arr) => {
         let newHTML = '';
         for (let i = 0; i < arr.length; i++) {
             newHTML += `<li><strong>${arr[i]}</strong></li>`;
